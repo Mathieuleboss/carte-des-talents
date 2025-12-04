@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Créer mon profil - Carte des Talents</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Carte des Talents</h1>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="login.html">Connexion</a>
+            <a href="profile.html">Créer mon profil</a>
+            <a href="dashboard.html">Explorer les talents</a>
+        </nav>
+    </header>
+    <main>
+        <section class="profile-form">
+            <h2>Créer / Modifier votre profil</h2>
+            <form action="#" method="POST">
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="photo">Photo (URL) :</label>
+                <input type="text" id="photo" name="photo">
+
+                <label for="skills">Compétences :</label>
+                <input type="text" id="skills" name="skills" placeholder="Séparez par des virgules">
+
+                <label for="languages">Langues :</label>
+                <input type="text" id="languages" name="languages" placeholder="Ex : Français, Anglais">
+
+                <label for="projects">Projets réalisés :</label>
+                <textarea id="projects" name="projects" rows="5"></textarea>
+
+                <label for="passions">Passions / Talents :</label>
+                <input type="text" id="passions" name="passions" placeholder="Séparez par des virgules">
+
+                <button type="submit" class="btn">Enregistrer le profil</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 CESI - Défi National</p>
+    </footer>
+</body>
+</html>

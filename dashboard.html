@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carte des Talents - Accueil</title>
+    <title>Explorer les talents - Carte des Talents</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,10 +17,18 @@
         </nav>
     </header>
     <main>
-        <section class="hero">
-            <h2>Bienvenue sur la Carte des Talents</h2>
-            <p>Créez votre profil, partagez vos compétences et trouvez des collaborateurs pour vos projets.</p>
-            <a href="login.html" class="btn">Commencer</a>
+        <section class="search">
+            <h2>Recherche avancée</h2>
+            <form action="#" method="GET">
+                <input type="text" placeholder="Compétence, langue, projet..." name="query">
+                <button type="submit" class="btn">Rechercher</button>
+            </form>
+        </section>
+
+        <section class="talent-map">
+            <h2>Carte des talents</h2>
+            <p>(Visualisation interactive / nuage de compétences à implémenter avec JS)</p>
+            <div id="map-container" style="height:400px; border:1px solid #ccc;"></div>
         </section>
     </main>
     <footer>

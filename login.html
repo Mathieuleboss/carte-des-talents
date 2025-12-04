@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carte des Talents - Accueil</title>
+    <title>Connexion - Carte des Talents</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,10 +17,18 @@
         </nav>
     </header>
     <main>
-        <section class="hero">
-            <h2>Bienvenue sur la Carte des Talents</h2>
-            <p>Créez votre profil, partagez vos compétences et trouvez des collaborateurs pour vos projets.</p>
-            <a href="login.html" class="btn">Commencer</a>
+        <section class="login-form">
+            <h2>Connexion</h2>
+            <form action="#" method="POST">
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="password">Mot de passe :</label>
+                <input type="password" id="password" name="password" required>
+                
+                <button type="submit" class="btn">Se connecter</button>
+            </form>
+            <p>Pas encore inscrit ? <a href="profile.html">Créer un profil</a></p>
         </section>
     </main>
     <footer>
